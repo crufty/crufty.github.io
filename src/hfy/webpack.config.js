@@ -7,12 +7,12 @@ module.exports = {
         app: './main.js'
     },
     output: {
-        path: __dirname + '/dist',
+        path: path.resolve(__dirname, '../../assets/js'),
         filename: '[name].bundle.js'
     },
     devServer: {
         open: true, // to open the local server in browser
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname, '../..'),
     },
     module: {
         loaders: [{

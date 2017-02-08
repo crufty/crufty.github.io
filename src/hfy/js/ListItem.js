@@ -5,9 +5,9 @@ class ListItem {
 
     html() {
         return `<li>
-            <span>${this.json.pubdate}</span>
-            <h1>${this.json.title}</h1>
-            <p>${this.json.abstract}</p>
+            <span class='published-date'>Published: ${this.json.pubdate}</span>
+            <h1 class='title'>${this.json.title}</h1>
+            <p class='abstract'>${this.json.abstract}</p>
         </li>`;
     }
 }

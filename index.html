@@ -7,6 +7,30 @@
 
 <body>
     <style>
+        #container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 75%;
+            height: 50%;
+            margin: auto;
+        }
+        
+        .published-date {
+            font-size: 0.85em;
+            color: #bbb;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            font-size: 0.75em;
+            width: 100%;
+            text-align: center;
+        }
+        
         ul {
             list-style: none;
         }
@@ -15,14 +39,12 @@
             margin-bottom: 20px;
         }
     </style>
-    <script src="assets/js/app.bundle.js"></script>
-    
+    <div id='container'></div>
     <footer>
         <p> Source: ProQuest Historical Newspapers: The New York Times with Index </p>
         <p> His First Year is an art project and commentary on our world. </p>
     </footer>
+    <script src="assets/js/app.bundle.js"></script>
 </body>
 
-
-    
 </html>

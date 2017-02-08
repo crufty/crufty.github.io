@@ -11,9 +11,8 @@ fetch(url)
         return response.json();
     })
     .then((json) => {
-        console.log(json);
-        let el = document.createElement('div');
-        let ul = new List(json);
+        let el = document.getElementById('container');
+        let headline = _.shuffle(json)[0];
+        let ul = new List([headline]);
         el.innerHTML = ul.html();
-        document.body.appendChild(el);
     });

@@ -54,11 +54,27 @@
         ul li {
             margin-bottom: 20px;
         }
-    </style>
-    
-    <form action="http://hisfirstyear.org">
-        <input type="submit" value="new headline" />
         
+        img.refresh {
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #848484;
+            -webkit-transition: padding-left .15s ease-in-out;
+            transition: padding-left .15s ease-in-out;
+        }
+        
+        img.refresh:hover {
+            cursor: pointer;
+            padding-left: 23px;
+            -webkit-transition: padding-left .15s ease-in-out;
+            transition: padding-left .15s ease-in-out;
+        }
+    </style>
+    <img class="refresh" src="assets/images/refresh.png" alt="refresh" onclick="window.location.href='http://www.hisfirstyear.org'">
     <div id='container'></div>
     <footer>
         <p> Source: ProQuest Historical Newspapers: The New York Times with Index. His First Year is an art project and commentary

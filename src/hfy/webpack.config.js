@@ -8,7 +8,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../../assets/js'),
-        filename: '[name].bundle.js'
+        filename: '[name].bundle.js',
+        publicPath: 'assets/js/'
     },
     devServer: {
         open: true, // to open the local server in browser

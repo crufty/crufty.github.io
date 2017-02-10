@@ -1,3 +1,4 @@
 /src/hfy/node_modules*
 /src/hfy/dist*
 /src/hfy/.vscode*
+.vscode*

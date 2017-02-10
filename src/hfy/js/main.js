@@ -4,7 +4,7 @@ import _ from 'lodash';
 import 'whatwg-fetch';
 import List from './List';
 
-let el = document.getElementById('container');
+let el = document.getElementById('headline_container');
 let url = 'https://dof4jdwm56.execute-api.us-west-2.amazonaws.com/prod/cruftyGov';
 let headline_hash = _.split(window.location.href, "/#headline/")[1];
 
